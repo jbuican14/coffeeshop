@@ -46,6 +46,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 The `ProductItem` component displays information about a single product, such as its name, price, image, and description. It can be used to render a list of products in a catalog or shop view.
 
 **Features:**
+
 - Shows product image, name, price, and description.
 - Supports click or add-to-cart actions via props.
 - Customizable styles via props or CSS.
@@ -55,27 +56,27 @@ The `ProductItem` component displays information about a single product, such as
 Storybook is used to develop and test UI components in isolation. To view and interact with the `ProductItem` component stories:
 
 1. Run Storybook:
-    ```bash
-    npm run storybook
-    ```
+   ```bash
+   npm run storybook
+   ```
 2. Open [http://localhost:6006](http://localhost:6006) in your browser.
 
 Example Story (`ProductItem.stories.jsx`):
 
 ```jsx
-import React from 'react';
-import ProductItem from './ProductItem';
+import React from "react";
+import ProductItem from "./ProductItem";
 
 export default {
-  title: 'Components/ProductItem',
+  title: "Components/ProductItem",
   component: ProductItem,
 };
 
 const sampleProduct = {
-  name: 'Espresso',
-  price: '$3.00',
-  image: '/images/espresso.jpg',
-  description: 'Rich and bold espresso shot.',
+  name: "Espresso",
+  price: "$3.00",
+  image: "/images/espresso.jpg",
+  description: "Rich and bold espresso shot.",
 };
 
 export const Default = () => <ProductItem {...sampleProduct} />;

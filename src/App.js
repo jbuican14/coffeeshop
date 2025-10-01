@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import ProductListItem from './components/ProductListItem/ProductListItem';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProductListItem
+        name="Espresso"
+        price={3.5}
+        description="A strong and bold coffee shot."
+        imageUrl="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80"
+        isSoldOut={false}
+        onAddToCart={() => alert('Added to cart!')}
+      />
     </div>
   );
 }
